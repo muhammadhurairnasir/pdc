@@ -36,9 +36,6 @@ int main(int argc, char* argv[]) {
     ==============================================================================
     This part is the original version from the main lab (before Bonus Challenge).
     It uses MPI_Reduce to send all partial sums to the root process only.
-    ------------------------------------------------------------------------------
-    Uncomment this section if you want to run the OLD logic instead.
-    ------------------------------------------------------------------------------
     
     MPI_Reduce(&local_sum, &global_sum, 1, MPI_DOUBLE, MPI_SUM, 0, MPI_COMM_WORLD);
 
