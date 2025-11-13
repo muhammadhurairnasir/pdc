@@ -33,8 +33,3 @@ Main Branch
 
   * Include both codes and reports specific to the respective exams.
 
-## Notes
-
-* Ensure you maintain the folder structure when adding new assignments.
-* Each new assignment should have both the code and the corresponding report.
-* This structure allows easy navigation and retrieval of assignments and reports.
