@@ -1,5 +1,3 @@
-# Cloud Data Handling and Assignment Repository
-
 ## Repository Structure
 
 The repository is organized as follows:
