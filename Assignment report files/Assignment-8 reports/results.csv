@@ -1,0 +1,6 @@
+
+Technology,Latency(ms),Payload(bytes)
+REST,45,72
+tRPC,32,72
+gRPC,18,38
+gRPC Service-to-Service,22,38
