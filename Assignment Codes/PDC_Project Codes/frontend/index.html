@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Disease Classifier</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Screen 1: Home Screen -->
+  <div id="homeScreen" class="screen active">
+    <div class="gradient-background">
+      <div class="container d-flex align-items-center justify-content-center min-vh-100">
+        <div class="text-center text-white">
+          <div class="mb-4">
+            <i class="bi bi-flower1 display-1"></i>
+          </div>
+          <h1 class="display-3 fw-bold mb-3">Plant Disease Classifier</h1>
+          <p class="lead mb-5">Identify plant diseases with AI-powered precision</p>
+          <button id="startBtn" class="btn btn-light btn-lg px-5 py-3 rounded-pill shadow-lg">
+            <i class="bi bi-play-fill me-2"></i>Start
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Screen 2: Upload Screen -->
+  <div id="uploadScreen" class="screen">
+    <div class="container min-vh-100 d-flex align-items-center justify-content-center py-5">
+      <div class="card shadow-lg border-0 upload-card">
+        <div class="card-body p-5 text-center">
+          <div class="mb-4">
+            <i class="bi bi-cloud-upload display-1 text-primary"></i>
+          </div>
+          <h2 class="mb-4">Upload Plant Image</h2>
+          <p class="text-muted mb-4">Select an image of a plant leaf to analyze</p>
+          
+          <div class="upload-area mb-4" id="uploadArea">
+            <input type="file" id="fileInput" accept="image/*" class="d-none" multiple>
+            <label for="fileInput" class="upload-label">
+              <i class="bi bi-image display-4 d-block mb-3"></i>
+              <span class="d-block mb-2">Click to upload or drag and drop</span>
+              <small class="text-muted">Up to 10 images · PNG/JPG/JPEG</small>
+            </label>
+          </div>
+
+          <div id="imagePreview" class="mb-4 d-none">
+            <div id="previewGrid" class="row g-3"></div>
+          </div>
+
+          <div class="d-flex gap-3 justify-content-center">
+            <button id="backBtn" class="btn btn-outline-secondary">
+              <i class="bi bi-arrow-left me-2"></i>Back
+            </button>
+            <button id="predictBtn" class="btn btn-primary btn-lg" disabled>
+              <i class="bi bi-search me-2"></i>Analyze
+            </button>
+          </div>
+
+          <div id="loading" class="mt-4 d-none">
+            <div class="spinner-border text-primary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-3 text-muted">Analyzing image...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Screen 3: Results Screen -->
+  <div id="resultsScreen" class="screen">
+    <div class="container min-vh-100 d-flex align-items-center justify-content-center py-5">
+      <div class="card shadow-lg border-0 results-card">
+        <div class="card-body p-5 text-center">
+          <div class="mb-4">
+            <i class="bi bi-check-circle-fill display-1 text-success"></i>
+          </div>
+          <h2 class="mb-4">Analysis Complete</h2>
+          
+          <div id="timings" class="row g-3 mb-4">
+            <div class="col-md-6">
+              <div class="timing-card">
+                <h5 class="mb-2">Serial Execution</h5>
+                <div id="serialTime" class="badge bg-primary fs-6">--</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="timing-card">
+                <h5 class="mb-2">Parallel Execution</h5>
+                <div id="parallelTime" class="badge bg-success fs-6">--</div>
+              </div>
+            </div>
+          </div>
+
+          <div id="predictionResult" class="prediction-result mb-4">
+            <!-- Predictions will be inserted here -->
+          </div>
+
+          <button id="analyzeAnotherBtn" class="btn btn-primary btn-lg">
+            <i class="bi bi-arrow-clockwise me-2"></i>Analyze Another
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

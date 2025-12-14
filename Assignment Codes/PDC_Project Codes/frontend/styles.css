@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+.screen {
+  display: none;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.screen.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Home Screen - Gradient Background */
+.gradient-background {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  min-height: 100vh;
+  position: relative;
+}
+
+.gradient-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.gradient-background > .container {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.btn-light {
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.btn-light:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Upload Screen */
+.upload-card {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.upload-area {
+  border: 3px dashed #dee2e6;
+  border-radius: 15px;
+  padding: 60px 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: #f8f9fa;
+}
+
+.upload-area:hover {
+  border-color: #0d6efd;
+  background: #e7f1ff;
+  transform: scale(1.02);
+}
+
+.upload-area.dragover {
+  border-color: #0d6efd;
+  background: #cfe2ff;
+  transform: scale(1.05);
+}
+
+.upload-label {
+  cursor: pointer;
+  display: block;
+  color: #6c757d;
+  transition: color 0.3s ease;
+}
+
+.upload-area:hover .upload-label {
+  color: #0d6efd;
+}
+
+.preview-thumb {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Results Screen */
+.results-card {
+  max-width: 700px;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.prediction-result {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  padding: 40px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+}
+
+.prediction-result h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.prediction-result .plant-name {
+  font-size: 1.5rem;
+  opacity: 0.9;
+  margin-bottom: 5px;
+}
+
+.prediction-result .disease-name {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+#resultImage img {
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.timing-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.result-item {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.result-item .disease {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.result-item .plant {
+  opacity: 0.85;
+  font-size: 1rem;
+}
+
+/* Button Styles */
+.btn {
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Loading Animation */
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .display-3 {
+    font-size: 2.5rem;
+  }
+
+  .upload-card,
+  .results-card {
+    margin: 20px;
+  }
+
+  .upload-area {
+    padding: 40px 20px;
+  }
+
+  .prediction-result {
+    padding: 30px 20px;
+  }
+
+  .prediction-result h3 {
+    font-size: 1.5rem;
+  }
+}
