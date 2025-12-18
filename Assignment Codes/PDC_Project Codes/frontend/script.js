@@ -91,9 +91,9 @@ function handleFiles(files) {
     combined.push({ file, preview: null });
   });
 
-  if (combined.length > 100) {
+  if (combined.length > 10) {
     alert("You can upload up to 10 images total.");
-    combined.splice(100);
+    combined.splice(10);
   }
 
   Promise.all(

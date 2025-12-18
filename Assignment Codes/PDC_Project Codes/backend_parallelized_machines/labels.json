@@ -1,0 +1,184 @@
+[
+    {
+        "index": 0,
+        "raw_name": "Apple___Apple_scab",
+        "plant": "Apple",
+        "disease": "Apple scab",
+        "healthy": false
+    },
+    {
+        "index": 1,
+        "raw_name": "Apple___Black_rot",
+        "plant": "Apple",
+        "disease": "Black rot",
+        "healthy": false
+    },
+    {
+        "index": 2,
+        "raw_name": "Apple___Cedar_apple_rust",
+        "plant": "Apple",
+        "disease": "Cedar apple rust",
+        "healthy": false
+    },
+    {
+        "index": 3,
+        "raw_name": "Apple___Healthy",
+        "plant": "Apple",
+        "disease": "Healthy",
+        "healthy": true
+    },
+    {
+        "index": 4,
+        "raw_name": "Corn___Cercospora_leaf_spot",
+        "plant": "Corn",
+        "disease": "Cercospora leaf spot",
+        "healthy": false
+    },
+    {
+        "index": 5,
+        "raw_name": "Corn___Common_rust",
+        "plant": "Corn",
+        "disease": "Common rust",
+        "healthy": false
+    },
+    {
+        "index": 6,
+        "raw_name": "Corn___Healthy",
+        "plant": "Corn",
+        "disease": "Healthy",
+        "healthy": true
+    },
+    {
+        "index": 7,
+        "raw_name": "Corn___Northern_Leaf_Blight",
+        "plant": "Corn",
+        "disease": "Northern Leaf Blight",
+        "healthy": false
+    },
+    {
+        "index": 8,
+        "raw_name": "Potato___Early_blight",
+        "plant": "Potato",
+        "disease": "Early blight",
+        "healthy": false
+    },
+    {
+        "index": 9,
+        "raw_name": "Potato___Healthy",
+        "plant": "Potato",
+        "disease": "Healthy",
+        "healthy": true
+    },
+    {
+        "index": 10,
+        "raw_name": "Potato___Late_blight",
+        "plant": "Potato",
+        "disease": "Late blight",
+        "healthy": false
+    },
+    {
+        "index": 11,
+        "raw_name": "Rice__Bacterial_blight",
+        "plant": "Rice",
+        "disease": "Bacterial blight",
+        "healthy": false
+    },
+    {
+        "index": 12,
+        "raw_name": "Rice__Brown_spot",
+        "plant": "Rice",
+        "disease": "Brown spot",
+        "healthy": false
+    },
+    {
+        "index": 13,
+        "raw_name": "Rice__Leaf_smut",
+        "plant": "Rice",
+        "disease": "Leaf smut",
+        "healthy": false
+    },
+    {
+        "index": 14,
+        "raw_name": "Strawberry___Leaf_scorch",
+        "plant": "Strawberry",
+        "disease": "Leaf scorch",
+        "healthy": false
+    },
+    {
+        "index": 15,
+        "raw_name": "Strawberry___healthy",
+        "plant": "Strawberry",
+        "disease": "healthy",
+        "healthy": true
+    },
+    {
+        "index": 16,
+        "raw_name": "Sugarcane__Healthy",
+        "plant": "Sugarcane",
+        "disease": "Healthy",
+        "healthy": true
+    },
+    {
+        "index": 17,
+        "raw_name": "Sugarcane__Mosaic",
+        "plant": "Sugarcane",
+        "disease": "Mosaic",
+        "healthy": false
+    },
+    {
+        "index": 18,
+        "raw_name": "Sugarcane__Red_Rot",
+        "plant": "Sugarcane",
+        "disease": "Red Rot",
+        "healthy": false
+    },
+    {
+        "index": 19,
+        "raw_name": "Sugarcane__Rust",
+        "plant": "Sugarcane",
+        "disease": "Rust",
+        "healthy": false
+    },
+    {
+        "index": 20,
+        "raw_name": "Sugarcane__Yellow",
+        "plant": "Sugarcane",
+        "disease": "Yellow",
+        "healthy": false
+    },
+    {
+        "index": 21,
+        "raw_name": "Tomato___Early_blight",
+        "plant": "Tomato",
+        "disease": "Early blight",
+        "healthy": false
+    },
+    {
+        "index": 22,
+        "raw_name": "Tomato___Healthy",
+        "plant": "Tomato",
+        "disease": "Healthy",
+        "healthy": true
+    },
+    {
+        "index": 23,
+        "raw_name": "Tomato___Late_blight",
+        "plant": "Tomato",
+        "disease": "Late blight",
+        "healthy": false
+    },
+    {
+        "index": 24,
+        "raw_name": "Tomato___Leaf_Mold",
+        "plant": "Tomato",
+        "disease": "Leaf Mold",
+        "healthy": false
+    },
+    {
+        "index": 25,
+        "raw_name": "Tomato___Septoria_leaf_spot",
+        "plant": "Tomato",
+        "disease": "Septoria leaf spot",
+        "healthy": false
+    }
+]
